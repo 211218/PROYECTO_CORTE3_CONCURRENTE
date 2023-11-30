@@ -68,7 +68,6 @@ public class Visitante implements Runnable{
             e.printStackTrace();
         }
 
-        //Ordenar
         monitor.comprarTicket();
 
         try {

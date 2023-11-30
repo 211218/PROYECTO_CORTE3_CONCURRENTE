@@ -94,8 +94,7 @@ public class Monitor extends Observable {
 
 
 
-    public void darEntradas(){//notifica al  mesero  que la comida ya esta disponibles
-        //Se cocina solo una vez, y esto va conforme a al pedido
+    public void darEntradas(){
         String txt = "libre";
         synchronized (this) {
             if (peticiones<=0){
@@ -115,7 +114,7 @@ public class Monitor extends Observable {
             notifyObservers(txt);
         }
     }
-    public void entrada(){// comen la comida de manera sincronizada
+    public void entrada(){
         synchronized (this) {
             while (entrada<=0){
                 try {
