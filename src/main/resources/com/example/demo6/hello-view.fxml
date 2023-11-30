@@ -83,7 +83,7 @@
             <Image url="@cliente2.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="meseroImageView" fitHeight="100.0" fitWidth="143.0" layoutX="580.0" layoutY="522.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="clienteImageView" fitHeight="100.0" fitWidth="143.0" layoutX="580.0" layoutY="522.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@cliente2.png" />
          </image>

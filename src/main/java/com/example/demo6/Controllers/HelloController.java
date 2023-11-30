@@ -25,7 +25,7 @@ public class HelloController implements Observer {
     private Button btnIniciar;
 
     @FXML
-    private ImageView meseroImageView; // Asegúrate de que este ImageView está definido en tu archivo FXML
+    private ImageView clienteImageView; // Asegúrate de que este ImageView está definido en tu archivo FXML
 
 
 
@@ -39,7 +39,7 @@ public class HelloController implements Observer {
     void IniciarAnimacion(ActionEvent event) {
         // Carga la imagen inicial del visitante
         Image initialImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/com/example/demo6/cliente.png")));
-        meseroImageView.setImage(initialImage);
+        clienteImageView.setImage(initialImage);
         btnIniciar.setDisable(true);
         //sse agrega al observador los cambios los hace en los juegos
         Monitor monitor = new Monitor();
@@ -68,10 +68,10 @@ public class HelloController implements Observer {
         synchronized (this) {
             if (((String) arg).contains("ocupado")){
                 Image busyImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/com/example/demo6/cliente.png")));
-                meseroImageView.setImage(busyImage);
+                clienteImageView.setImage(busyImage);
             } else if (((String) arg).contains("libre")){
                 Image freeImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/com/example/demo6/cliente.png")));
-                meseroImageView.setImage(freeImage);
+                clienteImageView.setImage(freeImage);
             }
         }
     }
