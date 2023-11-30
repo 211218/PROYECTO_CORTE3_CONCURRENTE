@@ -37,7 +37,7 @@ public class HelloController implements Observer {
 
     @FXML
     void IniciarAnimacion(ActionEvent event) {
-        // Carga la imagen inicial del cliente
+        // Carga la imagen inicial del visitante
         Image initialImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/com/example/demo6/cliente.png")));
         meseroImageView.setImage(initialImage);
         btnIniciar.setDisable(true);
@@ -61,19 +61,15 @@ public class HelloController implements Observer {
         HilosCreados hilosCreados = new HilosCreados(anchor, monitor, this);
         Thread hCreadorClientes = new Thread(hilosCreados);
         hCreadorClientes.start();
-
-
     }
 
     @Override
     public void update(Observable o, Object arg) {
         synchronized (this) {
-            if (((String) arg).contains("ocupadoMesero")){
-                // Cambia la imagen del ImageView cuando el mesero está ocupado
+            if (((String) arg).contains("ocupado")){
                 Image busyImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/com/example/demo6/cliente.png")));
                 meseroImageView.setImage(busyImage);
-            } else if (((String) arg).contains("libreMesero")){
-                // Cambia la imagen del ImageView cuando el mesero está libre
+            } else if (((String) arg).contains("libre")){
                 Image freeImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/com/example/demo6/cliente.png")));
                 meseroImageView.setImage(freeImage);
             }

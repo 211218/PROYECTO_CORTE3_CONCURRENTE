@@ -62,7 +62,7 @@ public class Monitor extends Observable {
     }
 
     public void darTicket(){// ordenar de manera sincronizada
-        String txt = "libreMesero";
+        String txt = "libreVisitante";
         boolean aux = false;
         synchronized (this) {
             if (solicitarTicket<=0){

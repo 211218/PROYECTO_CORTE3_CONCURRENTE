@@ -28,7 +28,7 @@ public class Visitante implements Runnable{
         positions[7] = "293 393"; // caballos
         positions[8] = "470 429"; // caballos2
         positions[9] = "680 393"; // caballos3
-        positions[10] = "617 586"; // meseroImageView
+        positions[10] = "617 586";
 
 
     }

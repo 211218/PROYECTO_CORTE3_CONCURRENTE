@@ -6,7 +6,7 @@ public class Tickets implements Runnable{
         this.monitor = monitor;
     }
     @Override
-    public void run() {//preparar comida de manera continua
+    public void run() {
         while(true){
             monitor.darEntradas();
         }
