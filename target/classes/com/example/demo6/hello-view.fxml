@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="766.0" prefWidth="1096.0" style="-fx-background-position: 1;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo6.Controllers.HelloController">
+   <children>
+      <ImageView fitHeight="777.0" fitWidth="1096.0" layoutY="-11.0">
+         <image>
+            <Image url="@fondo.png" />
+         </image>
+      </ImageView>
+
+      <Button fx:id="btnIniciar" layoutX="848.0" layoutY="697.0" mnemonicParsing="false" onAction="#IniciarAnimacion" prefHeight="30.0" prefWidth="66.0" style="-fx-background-radius: 30;" text="Iniciar" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="BtnSalir" layoutX="969.0" layoutY="697.0" mnemonicParsing="false" onAction="#Finalizar" prefHeight="25.0" prefWidth="66.0" style="-fx-background-radius: 30;" text="Salir">
+         <cursor>
+            <Cursor fx:constant="CROSSHAIR" />
+         </cursor>
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Rectangle fx:id="table1" arcHeight="5.0" arcWidth="5.0" fill="#b2b2b2" height="50.0" layoutX="94.0" layoutY="531.0" stroke="#ffffff00" strokeType="INSIDE" width="50.0" />
+      <ImageView fx:id="ruedas" fitHeight="242.0" fitWidth="318.0" layoutX="152.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ruedas.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="casa" fitHeight="254.0" fitWidth="232.0" layoutX="216.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@casa_embrujada.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="girar" fitHeight="229.0" fitWidth="386.0" layoutX="373.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@girar.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="big" fitHeight="255.0" fitWidth="629.0" layoutX="462.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@big.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="barco" fitHeight="173.0" fitWidth="204.0" layoutX="853.0" layoutY="398.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@barco.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="caballos_girar" fitHeight="197.0" fitWidth="212.0" layoutX="119.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@caballos_gira.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="fast" fitHeight="254.0" fitWidth="238.0" layoutX="7.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@fast.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="caballos" fitHeight="154.0" fitWidth="131.0" layoutX="293.0" layoutY="393.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@caballos.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="caballos2" fitHeight="155.0" fitWidth="154.0" layoutX="470.0" layoutY="429.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@caballos.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="caballos3" fitHeight="167.0" fitWidth="170.0" layoutX="680.0" layoutY="393.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@caballos.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="121.0" fitWidth="143.0" layoutX="734.0" layoutY="526.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cliente2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="clienteImageView" fitHeight="100.0" fitWidth="143.0" layoutX="580.0" layoutY="522.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cliente2.png" />
+         </image>
+      </ImageView>
+
+
+
+   </children>
+</AnchorPane>

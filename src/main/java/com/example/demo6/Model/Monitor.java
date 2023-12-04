@@ -67,6 +67,7 @@ public class Monitor extends Observable {
         synchronized (this) {
             if (solicitarTicket<=0){
                 txt = "libre";
+                System.out.println("libre");
                 try {
                     wait();
                 } catch (InterruptedException e) {
@@ -76,6 +77,7 @@ public class Monitor extends Observable {
             }else{
                 aux = true;
                 txt = "ocupado";
+                System.out.println("ocupado");
                 peticiones++;
                 solicitarTicket--;
             }
@@ -99,6 +101,7 @@ public class Monitor extends Observable {
         synchronized (this) {
             if (peticiones<=0){
                 txt = "libre";
+                System.out.println("ticker libre");
                 try {
                     wait();
                 } catch (InterruptedException e) {
@@ -106,6 +109,7 @@ public class Monitor extends Observable {
                 }
             }else{
                 txt = "ocupado";
+                System.out.println("ticker ocupado");
                 entrada++;
                 peticiones--;
             }
