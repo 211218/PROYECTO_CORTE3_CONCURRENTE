@@ -25,9 +25,6 @@ public class HelloController implements Observer {
     @FXML
     private ImageView clienteImageView; // Asegúrate de que este ImageView está definido en tu archivo FXML
 
-
-
-
     @FXML
     void Finalizar(ActionEvent event) {
         Platform.exit();
@@ -60,7 +57,6 @@ public class HelloController implements Observer {
         Thread hCreadorClientes = new Thread(hilosCreados);
         hCreadorClientes.start();
     }
-
     @Override
     public void update(Observable o, Object arg) {
         synchronized (this) {

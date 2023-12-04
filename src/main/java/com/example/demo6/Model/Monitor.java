@@ -94,8 +94,6 @@ public class Monitor extends Observable {
         }
     }
 
-
-
     public void darEntradas(){
         String txt = "libre";
         synchronized (this) {
