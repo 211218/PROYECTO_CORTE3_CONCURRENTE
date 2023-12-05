@@ -12,7 +12,7 @@ public class Visitante implements Runnable{
     private static String[] positions;
 
     @FXML
-    private ImageView table3; // Asegúrate de que este ImageView está definido en tu archivo FXML
+    private ImageView table3;
 
     public Visitante(AnchorPane anchor, Monitor monitor){
         this.anchor = anchor;
@@ -76,14 +76,14 @@ public class Visitante implements Runnable{
             e.printStackTrace();
         }
 
-        //entrar
+        //entrar monitor
         monitor.entrada();
         try {
             Thread.sleep(500);
         } catch (InterruptedException e) {
             e.printStackTrace();}
 
-        //Salir
+        //Salir con monitor
         Platform.runLater(() -> {
             cliente.setLayoutX(519);
             cliente.setLayoutY(1133);

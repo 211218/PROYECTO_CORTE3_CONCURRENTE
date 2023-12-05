@@ -6,7 +6,7 @@ public class Recepcionista implements Runnable{
         this.monitor = monitor;
     }
     @Override
-    //Duerme a al resepcionista
+    //Duerme a al resepcionista por uno
     public void run() {
         while (true){
             try {

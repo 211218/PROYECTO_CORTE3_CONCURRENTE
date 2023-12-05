@@ -12,7 +12,7 @@ public class HelloApplication extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("/com/example/demo6/hello-view.fxml"));
 
-        primaryStage.setTitle("Parque de Diversiones");
+        primaryStage.setTitle("Parque de Diversiones!");
 
         primaryStage.setScene(new Scene(root));
         primaryStage.show();

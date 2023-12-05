@@ -10,6 +10,7 @@ public class HilosCreados extends Random implements Runnable{
     private AnchorPane anchor;
     private Monitor monitor;
     private HelloController controller;
+
     public HilosCreados(AnchorPane anchor, Monitor monitor, HelloController controller){
         this.anchor = anchor;
         this.monitor = monitor;
